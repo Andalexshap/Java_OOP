@@ -1,4 +1,4 @@
-package Home_work.Services;
+package Home_work.Home_Work_1.Services;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -37,7 +37,7 @@ public class Game {
                            second_player.getTeam() + "(" + 
                            second_player.getName() + ")");
 
-                           
+
         first_player.attack(second_player);
         var team = second_player.getTeam();
         if (!second_player.isAlive()) {

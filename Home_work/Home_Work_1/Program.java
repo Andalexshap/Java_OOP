@@ -1,8 +1,8 @@
 package Home_work.Home_Work_1;
 
-import Home_work.Services.Game;
-import Home_work.Services.Greeting;
-import Home_work.Services.Teams;
+import Home_work.Home_Work_1.Services.Game;
+import Home_work.Home_Work_1.Services.Greeting;
+import Home_work.Home_Work_1.Services.Teams;
 
 public class Program {
     public static void main(String[] args) {
