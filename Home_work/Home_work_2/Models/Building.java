@@ -28,14 +28,14 @@ public class Building implements HasHealthPoint, Treatment, GetDamage {
     public void treatment() {
         var thread = new Thread(() -> {
             while (true) {
-                if (currentHealthPoint + 50 < maxHealthPoint) {
-                    currentHealthPoint += 50;
-                    System.out.println("Здоровье " + Building.class.getSimpleName() + " увеличено на 100 едениц");
-                }
                 try {
                     Thread.sleep(10 * 1000L);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
+                }
+                if (currentHealthPoint + 50 < maxHealthPoint) {
+                    currentHealthPoint += 50;
+                    System.out.println("Здоровье " + Building.class.getSimpleName() + " увеличено на 100 едениц");
                 }
             }
         });
